@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBarSlider.Android",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBarSlider.iOS", "ProgressBarSlider\ProgressBarSlider.iOS\ProgressBarSlider.iOS.csproj", "{0FAD005E-03A7-430A-9AFE-823955828AD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBarSlider", "ProgressBarSlider\ProgressBarSlider\ProgressBarSlider.csproj", "{43F0FA66-479A-4A3D-B5E2-72B73E965D0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgressBarSlider", "ProgressBarSlider\ProgressBarSlider\ProgressBarSlider.csproj", "{43F0FA66-479A-4A3D-B5E2-72B73E965D0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

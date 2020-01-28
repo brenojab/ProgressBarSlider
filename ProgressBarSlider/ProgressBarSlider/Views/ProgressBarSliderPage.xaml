@@ -5,7 +5,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ProgressBarSlider.Views.ProgressBarSliderPage"
-             xmlns:vm="clr-namespace:ProgressBarSlider.ViewModels">
+             xmlns:vm="clr-namespace:ProgressBarSlider.ViewModels"
+             xmlns:controls="clr-namespace:ProgressBarSlider"
+             BackgroundColor="DarkGray">
 
     
     <ContentPage.BindingContext>
@@ -14,14 +16,30 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <ProgressBar x:Name="progressBar"
-                         HeightRequest="50"
+            <Label Text="{Binding SliderProgressValue}"
+                   VerticalOptions="End"/>
+            <!--<ProgressBar BindingContext="{x:Reference Name=slider}"
+                         x:Name="progressBar"
+                         HeightRequest="100"
+                         WidthRequest="50"
                          ProgressColor="Orange"
-                         VerticalOptions="CenterAndExpand" 
-                         Rotation="90"
-                         Progress="{Binding SliderProgressValue}"/>
+                         VerticalOptions="StartAndExpand" 
+                         Rotation="270"
+                         Progress="{Binding Path=Value}"
+                         BackgroundColor="Gray" />-->
 
-            <Slider Value="{Binding SliderProgressValue}"/>
+            <!--<Slider x:Name="slider"
+                    Value="{Binding SliderProgressValue}"
+                    BackgroundColor="Red"
+                    HeightRequest="50"                    />-->
+
+                <controls:CustomProgressBar 
+                    Margin="10"
+                    Progress=".7"
+                    Rotation="270"
+                    VerticalOptions="CenterAndExpand"
+                    HeightRequest="100"
+                    WidthRequest="200"/>
 
         </StackLayout>
     </ContentPage.Content>
